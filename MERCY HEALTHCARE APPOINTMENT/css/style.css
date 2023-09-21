@@ -1,0 +1,271 @@
+
+
+*{
+	margin: 0;
+	padding: 0;
+	
+}
+
+ul{
+	list-style-type: none;
+			margin: 15px;
+			padding:0px;
+			background-color: grey;
+			width: 120%;
+			overflow: hidden;
+			position: fixed;
+			top: 0px;
+	
+}
+ul li{
+	display: inline-block;
+
+}
+
+li a{
+			display: block;
+			float: right;
+			width: 110px;
+			padding: 15px;
+			color: black;
+			text-decoration: none;
+			border-right: 1px solid white;
+			font-size: 18pt;
+			text-align: center;
+		}
+li a:hover{
+			background-color: black;
+			color: white;
+		}
+		li:last-child a{
+			border-right: none;
+		}
+.active{
+			background-color: pink;
+		}
+ul li a{
+	text-decoration: none;
+	color: rgb();
+	padding: 3px 10px;
+	border: 1px blue;
+	transition: 0.6s ease;
+}
+
+header{
+	height: 40px;
+	width: 40px;
+	position: right;
+	padding-left: 780px;
+}
+#slider{
+	overflow: hidden;
+}
+#slider figure{
+	position: relative;
+	width: 500%;
+	margin: 0px;
+	left: 0;
+	animation: 25s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
+	height: 500px;
+
+
+}
+@keyframes slider{
+	0%{
+		left: 0;
+	}
+	20%{
+		left: 0;
+	}
+	25%{
+		left: -100%;
+	}
+	45%{
+		left: -100%; 
+	}
+	50%{
+		left: -200%;
+	}
+	70%{
+		left: -200%;
+	}
+	75%{
+		left: -300%;
+	}
+	95%{
+		left: -300%;
+	}
+	100%{
+		left: -400%;
+	}
+}
+
+html,
+body{
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	background: #f6f6f6;
+	font-family: 'Lora' serif;
+}
+ 
+ .team-section{
+  width: 100%;
+
+ }
+
+ .team-section .container{
+ 	width: 80%;
+ 	margin: auto;
+ }
+
+ .team-section .container .row{
+ 	width: 60%;
+ 	margin: auto;
+ }
+ .team-section .container .row .title{
+ text-align: center;
+ margin-top: 50px;
+ }
+
+ .team-section .container .row .title h1{
+ 	font-size: 25px;
+ 	text-transform: uppercase;
+ 	letter-spacing: 1.5px;
+ 	color: #017bf5;
+ }
+
+ .team-section .container .row .title p{
+ 	font-size: 18px;
+ 	font-family: sans-serif;
+ 	margin: 30px 0px;
+ 	color: #a3a3a3;
+ }
+
+.team-section .container .team-card{
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 70px;
+	margin-top: 50px;
+}
+.team-section .container .team-card .card{
+	width: 100%;
+	background-color: #fafafa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 20px;
+	cursor: pointer;
+}
+.team-section .container .team-card .card:hover{
+	background-color: #f3f3f3;
+	transition: 2.3px;
+}
+.team-section .container .team-card .card .image-section img{
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	border: 6px solid #fff;
+}
+.team-section .container .team-card .card .content{
+	width: 100%;
+	text-align: center;
+}
+.team-section .container .team-card .card .content h2{
+	font-size: 27px;
+	margin-top: 10px;
+	letter-spacing: 1.5px;
+	color: #639ab8;
+}
+.team-section .container .team-card .card .content h3{
+	font-size: 17px;
+	margin-top: 10px;
+	letter-spacing: 1.5px;
+	color: #6e6e6e;
+}
+.team-section .container .team-card .card .content p{
+	font-size: 15px;
+	margin: 16px 0px;
+	line-height: 1.5;
+	color: #6c6c6c;
+}
+@media screen and (max-width: 900px){
+	.team-section .container .team-card{
+
+	grid-template-columns: repeat(2, 1fr);
+	
+}
+}
+@media screen and (max-width: 768px){
+	.team-section .container .team-card{
+
+	grid-template-columns: repeat(2, 1fr);
+	
+}
+}
+
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 5px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+}
+
+
+ /* FOOTER */
+ .footer{
+ 	background: #303036;
+ 	color: #d3d3d3;
+ 	height: 400px;
+ 	position: relative;
+ }
+
+ .footer .footer-content{
+ 	border: 1px solid red;
+ 	height: 350px;
+ 	display: flex;
+ }
+ .footer .footer-content .footer-section{
+ 	flex: 2;
+ 	padding: 25px;
+ 	border: 1px solid white;
+ }
+ .footer .footer-content h1,
+ .footer .footer-content h2{
+ 	color: white;
+
+ }
+ .footer .footer-content .about h1 span{
+ 	color: #05f7ff;
+ }
+ .footer .footer-bottom{
+ 	background: #343a40;
+ 	color: #686868;
+ 	height: 25px;
+ 	width: 100%;
+ 	text-align: center;
+ 	position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+
+ }
+
+
+
+
+
+
+
+
